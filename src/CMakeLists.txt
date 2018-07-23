@@ -1,9 +1,11 @@
 include_directories(../include)
-set(core_SRCS
-        ../include/A.h A.cpp
+
+file(GLOB core_SRCS
+        "*.cpp"
+        "../include/*.h"
+        "../include/*.hpp"
         )
 
 add_library(core ${core_SRCS})
-#add_executable(exe main.cpp)
 
 target_link_libraries(core)
