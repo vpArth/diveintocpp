@@ -7,5 +7,6 @@ file(GLOB core_SRCS
         )
 
 add_library(core ${core_SRCS})
+add_executable(PT_FM "../patterns/creational/FactoryMethod.cpp")
 
 target_link_libraries(core)
